@@ -32,9 +32,11 @@ class WriteTweet extends React.Component {
 
   handleSubmit() {
     if (this.props.newTweet.tweetLength > 0 && this.props.newTweet.tweetLength < 141) {
-      this.props.dispatch(pushTweet(this.props.newTweet.tweet));
-      this.props.dispatch(updateTweetState({val:"", tweetLength:0, message:""}));
-      this.props.dispatch(fetchTweets());
+      this.props.dispatch(pushTweet(this.props.newTweet.tweet))
+        .then(() => {
+          return this.props.dispatch(fetchTweets());
+        });
+      this.props.dispatch(updateTweetState({val: "", tweetLength: 0, message: ""}));
     }
   }
 

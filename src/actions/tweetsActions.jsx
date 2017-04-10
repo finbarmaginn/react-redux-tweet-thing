@@ -1,18 +1,20 @@
 import axios from "axios";
 
 export function fetchTweets() {
-  return function (dispatch) {
-    axios.get("http://rest.learncode.academy/api/test123/tweets")
-      .then((response) => {
-        dispatch({type: "FETCH_TWEETS_FULFILLED", payload: response.data})
-      })
-      .catch((err) => {
-        dispatch({type: "FETCH_TWEETS_REJECTED", payload: err})
-      })
+  return {
+    type: "FETCH_TWEETS",
+    payload: axios.get("http://rest.learncode.academy/api/test123/tweets")
   }
 }
 
 export function pushTweet(val) {
+  return {
+    type: "POST_TWEET",
+    payload: axios.post("http://rest.learncode.academy/api/test123/tweets", {
+      text: val
+    })
+  }
+/*
   return function (dispatch) {
     axios.post("http://rest.learncode.academy/api/test123/tweets", {
       text: val
@@ -24,6 +26,7 @@ export function pushTweet(val) {
         dispatch({type: "POST_TWEET_REJECTED", payload: err})
       })
   }
+*/
 }
 
 export function updateTweetState(obj) {

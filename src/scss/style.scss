@@ -1,0 +1,65 @@
+body {
+  background: #e6e6e6;
+}
+
+p {
+  &.tweetLength {
+    display: inline-block;
+    margin: 5px
+  }
+  &.tweetPreview {
+    height: auto;
+    overflow: hidden;
+    white-space: pre;
+  }
+}
+
+div {
+  &#wrap {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 320px;
+    div {
+      &#preview {
+        display: block;
+        border: 1px solid #8d8d8d;
+        margin: 5px 0;
+        padding: 5px;
+        background: white;
+        height: auto;
+        overflow: hidden;
+        h4 {
+          margin-top: 0px
+        }
+      }
+    }
+  }
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 320px;
+  li {
+    display: block;
+    border: 1px solid #8d8d8d;
+    margin: 5px 0;
+    padding: 5px;
+    background: white;
+    height: auto;
+    overflow: hidden;
+    i {
+      float: right;
+      color: #8d8d8d;
+    }
+  }
+}
+
+form {
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    max-height: 80px;
+  }
+}

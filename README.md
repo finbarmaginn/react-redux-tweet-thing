@@ -1,6 +1,8 @@
 # React Redux Experiment
 
-This application started life out as a set of tutorials on youtube and from there i was able to expand on that knowledge to create this simple "Tweet Engine", you might call it, using React Redux etc etc. it is not isomorphic because i havent started following tutorials on that yet...
+This application started life out as a set of tutorials on youtube and from there i was able to expand on that knowledge to create this simple "Tweet Engine", you might call it, using React Redux etc etc. it is not isomorphic because i havent started following tutorials on that yet... see below for a link to the first of the video tutorials that I followed to get to where i am now.
+
+https://www.youtube.com/watch?v=1w-oQ-i1XB8
 
 ## Installing Dependencies
 

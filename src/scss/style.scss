@@ -57,8 +57,8 @@ ul {
 
 form {
   textarea {
-    width: 100%;
-    max-width: 100%;
+    min-width: calc(#{100%} - #{4px});
+    max-width: calc(#{100%} - #{4px});
     min-height: 80px;
     max-height: 80px;
   }

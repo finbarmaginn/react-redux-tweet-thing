@@ -1,5 +1,6 @@
 body {
   background: #e6e6e6;
+  overflow-y:scroll;
 }
 
 p {
@@ -29,7 +30,7 @@ div {
         height: auto;
         overflow: hidden;
         h4 {
-          margin-top: 0px
+          margin-top: 0;
         }
       }
     }

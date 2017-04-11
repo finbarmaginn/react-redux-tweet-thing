@@ -4,6 +4,12 @@ This application started life out as a set of tutorials on youtube and from ther
 
 https://www.youtube.com/watch?v=1w-oQ-i1XB8
 
+## Serving Files locally
+
+Because the application is not isomorphic i decided to use this simple tool to serve the files locally:
+
+https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en
+
 ## Installing Dependencies
 
 Making sure node is installed locally, navigate to this directory and run the following command in your terminal:

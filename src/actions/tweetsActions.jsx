@@ -14,19 +14,6 @@ export function pushTweet(val) {
       text: val
     })
   }
-/*
-  return function (dispatch) {
-    axios.post("http://rest.learncode.academy/api/test123/tweets", {
-      text: val
-    })
-      .then((response) => {
-        dispatch({type: "POST_TWEET_FULFILLED", payload: response.data})
-      })
-      .catch((err) => {
-        dispatch({type: "POST_TWEET_REJECTED", payload: err})
-      })
-  }
-*/
 }
 
 export function updateTweetState(obj) {
